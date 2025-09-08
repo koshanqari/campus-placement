@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Placement Talk Attendance - GrowthJockey</title>
+    <link rel="preload" as="image" href="./Full Stack Venture Builder & Startup Accelerator in India_files/gjLogoWhite.svg">
+    <link rel="preload" as="image" href="./Full Stack Venture Builder & Startup Accelerator in India_files/gjLogoBlack.svg">
+    <link rel="stylesheet" href="./Full Stack Venture Builder & Startup Accelerator in India_files/root-CBbEKAqK.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="https://www.growthjockey.com/" class="w-fit">
+                    <div class="grid items-center max-xl:h-[1.5rem] xl:h-[2.625rem] max-xl:w-[7.8125rem] xl:w-[14rem] w-fit h-fit">
+                        <img alt="GrowthJockey Logo" src="./Full Stack Venture Builder & Startup Accelerator in India_files/gjLogoWhite.svg" class="col-start-1 row-start-1 transition-opacity transition-duration-[250ms] opacity-0">
+                        <img alt="GrowthJockey Logo" src="./Full Stack Venture Builder & Startup Accelerator in India_files/gjLogoBlack.svg" class="col-start-1 row-start-1 transition-opacity transition-duration-[250ms] opacity-100">
+                    </div>
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="https://www.growthjockey.com/" class="text-nav-text-b hover:text-primary-800 transition-colors">Home</a>
+                    <a href="https://www.growthjockey.com/about" class="text-nav-text-b hover:text-primary-800 transition-colors">About</a>
+                    <a href="https://www.growthjockey.com/services" class="text-nav-text-b hover:text-primary-800 transition-colors">Services</a>
+                    <a href="https://www.growthjockey.com/contact" class="text-nav-text-b hover:text-primary-800 transition-colors">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="min-h-screen bg-surface-primary-background" style="padding-top: 120px;">
+        <!-- Header Section -->
+        <div class="bg-surface-primary-background py-24">
+            <div class="container mx-auto px-4 text-center">
+                <div class="grid grid-cols-1 grid-flow-row gap-lg lg:gap-md h-fit">
+                    <div class="grid grid-cols-1 grid-flow-row gap-sm lg:gap-md h-fit">
+                        <h1 class="text-title text-text-primary mb-4">Pre-Placement Talk Attendance Form</h1>
+                        <h2 class="text-heading2-25">
+                            <span class="bg-gradient-to-r from-[#00A2ED] to-[#1F40CB] bg-clip-text text-transparent">NIT Srinagar</span>
+                        </h2>
+                    </div>
+                    <div class="grid grid-cols-1 grid-flow-row gap-lg">
+                        <p class="text-body text-text-secondary max-w-2xl mx-auto">
+                            Register your attendance for the upcoming Pre-Placement Talk at NIT Srinagar. Please fill out the form below with your details.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4" style="padding-top: 50px; padding-bottom: 120px;">
+            <!-- Form Container -->
+            <div class="form-container bg-surface-surface-card rounded-lg shadow-lg p-8">
+                <!-- Success Message -->
+                <div id="successMessage" class="success-message">
+                    <strong>Success!</strong> Thank you! Your attendance has been recorded.
+                </div>
+
+                <!-- Error Message -->
+                <div id="errorMessage" class="error-message">
+                    Please correct the errors below and try again.
+                </div>
+
+                <!-- Attendance Form -->
+                <form id="attendanceForm" class="space-y-6">
+                    <!-- Full Name Field -->
+                    <div class="form-field">
+                        <label for="fullName" class="form-label">
+                            Full Name <span class="text-red-500">*</span>
+                        </label>
+                        <input 
+                            type="text" 
+                            id="fullName" 
+                            name="fullName" 
+                            class="form-input" 
+                            placeholder="Enter your full name"
+                            required
+                        >
+                        <div id="fullNameError" class="error-message-field"></div>
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="form-field">
+                        <label for="email" class="form-label">
+                            College Email ID <span class="text-red-500">*</span>
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="form-input" 
+                            placeholder="Enter your college email address"
+                            required
+                        >
+                        <div id="emailError" class="error-message-field"></div>
+                    </div>
+
+                    <!-- Mobile Field -->
+                    <div class="form-field">
+                        <label for="mobile" class="form-label">
+                            Mobile Number <span class="text-red-500">*</span>
+                        </label>
+                        <input 
+                            type="tel" 
+                            id="mobile" 
+                            name="mobile" 
+                            class="form-input" 
+                            placeholder="Enter your 10-digit mobile number"
+                            required
+                        >
+                        <div id="mobileError" class="error-message-field"></div>
+                    </div>
+
+
+                    <!-- Questions Field -->
+                    <div class="form-field">
+                        <label for="questions" class="form-label">
+                            Any Questions?
+                        </label>
+                        <textarea 
+                            id="questions" 
+                            name="questions" 
+                            class="form-input form-textarea" 
+                            placeholder="Do you have any questions about the pre-placement talk?"
+                            rows="4"
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-field">
+                        <button type="submit" id="submitBtn" class="submit-btn">
+                            Submit Attendance
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full h-full grid grid-cols-1 gap-3 md:px-lg2 md:gap-lg md:pt-lg2 p-lg">
+        <div class="grid grid-cols-1 md:grid-flow-row  md:justify-between gap-3 items-start">
+            <div class="grid grid-rows-1 grid-cols-[auto_minmax(0,1fr)] items-center gap-sm">
+                <div class="grid grid-cols-1 gap-sm">
+                    <img loading="lazy" src="./Full Stack Venture Builder & Startup Accelerator in India_files/gjSymbol.svg" alt="GrowthJockey Symbol" class="w-9 h-9 md:w-28 md:h-28">
+                    <img loading="lazy" src="./Full Stack Venture Builder & Startup Accelerator in India_files/gjWordmarkBlack.svg" alt="GrowthJockey WordMark" class="w-[10.875rem] h-12 lg:hidden">
+                </div>
+                <div class="grid grid-cols-1 place-items-end md:place-items-start md:grid-flow-col ml-auto">
+                    <a href="https://www.intellsys.ai/" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">intellsys</a>
+                    <a href="https://www.growthjockey.com/products/ottopilot" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">OttoPilot</a>
+                    <a href="https://www.growthjockey.com/blogs" class="text-nav-text-b px-md py-[0.375rem] gap-sm text-text-primary hover:text-primary-500 transition-colors duration-[250ms] whitespace-nowrap">Growth Blogs</a>
+                    <a href="https://www.growthjockey.com/careers" class="text-nav-text-b px-md py-[0.375rem] gap-sm text-text-primary hover:text-primary-500 transition-colors duration-[250ms] whitespace-nowrap">Careers</a>
+                    <a href="https://www.growthjockey.com/who-we-are" class="text-nav-text-b px-md py-[0.375rem] gap-sm text-text-primary hover:text-primary-500 transition-colors duration-[250ms] whitespace-nowrap">Who We Are</a>
+                    <a href="https://www.growthjockey.com/what-we-do" class="text-nav-text-b px-md py-[0.375rem] gap-sm text-text-primary hover:text-primary-500 transition-colors duration-[250ms] whitespace-nowrap">What We Do</a>
+                </div>
+            </div>
+            <img loading="lazy" src="./Full Stack Venture Builder & Startup Accelerator in India_files/gjWordmarkBlack.svg" alt="GrowthJockey WordMark" class="w-[19.1875rem] h-12 max-lg:hidden">
+        </div>
+        <div class="w-full relative">
+            <div class="block md:hidden py-md">
+                <div class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-[#64ABFF] to-[#7330FB]"></div>
+                <div data-headlessui-state=""><button class="text-left p-xs w-full grid grid-cols-[1fr_auto] items-center gap-4 rounded-lg" id="headlessui-disclosure-button-«Rpar5»" type="button" aria-expanded="false" data-headlessui-state=""><span class="text-nav-text-b">Industries</span><div class="h-6 w-6 rounded-lg grid place-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4"><path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z"></path></svg></div></button></div>
+            </div>
+            <div class="hidden md:grid w-full justify-end py-md">
+                <div class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-[#64ABFF] to-[#7330FB]"></div>
+                <div class="w-full grid grid-cols-1 gap-y-4 justify-items-end">
+                    <div class="relative grid justify-items-end px-md py-sm">
+                        <span class="text-body">Industries</span>
+                        <span class="absolute bottom-0 right-0 w-full h-[1px] bg-[linear-gradient(90deg,#64ABFF_0%,#7330FB_100%)]"></span>
+                    </div>
+                    <div class="w-full text-right text-nav-text-b grid grid-cols-1 md:grid-cols-4 gap-x-6 gap-y-2 justify-items-end">
+                        <a href="https://www.growthjockey.com/industries/education" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Education</a>
+                        <a href="https://www.growthjockey.com/industries/health-and-fitness" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">HealthCare</a>
+                        <a href="https://www.growthjockey.com/industries/banking-and-fintech" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Financial Technologies</a>
+                        <a href="https://www.growthjockey.com/industries/energy" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Energy</a>
+                        <a href="https://www.growthjockey.com/industries/ev-and-automobile" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Automobile</a>
+                        <a href="https://www.growthjockey.com/industries/travel-and-hospitality" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Travel and Tourism</a>
+                        <a href="https://www.growthjockey.com/industries/media-and-entertainment" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Tech & Media</a>
+                        <a href="https://www.growthjockey.com/industries/real-estate" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Real Estate</a>
+                        <a href="https://www.growthjockey.com/industries/biotechnology" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Biotechnology</a>
+                        <a href="https://www.growthjockey.com/industries/ecommerce" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Digital Commerce</a>
+                        <a href="https://www.growthjockey.com/industries/software-and-platform" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Software and Platform</a>
+                        <a href="https://www.growthjockey.com/industries/smart-retail" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Smart Retail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full relative">
+            <div class="block md:hidden py-md">
+                <div class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-[#64ABFF] to-[#7330FB]"></div>
+                <div data-headlessui-state=""><button class="text-left p-xs w-full grid grid-cols-[1fr_auto] items-center gap-4 rounded-lg" id="headlessui-disclosure-button-«Rper5»" type="button" aria-expanded="false" data-headlessui-state=""><span class="text-nav-text-b">Capabilities</span><div class="h-6 w-6 rounded-lg grid place-items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4"><path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z"></path></svg></div></button></div>
+            </div>
+            <div class="hidden md:grid w-full justify-end py-md">
+                <div class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-[#64ABFF] to-[#7330FB]"></div>
+                <div class="w-full grid grid-cols-1 gap-y-4 justify-items-end">
+                    <div class="relative grid justify-items-end px-md py-sm">
+                        <span class="text-body">Capabilities</span>
+                        <span class="absolute bottom-0 right-0 w-full h-[1px] bg-[linear-gradient(90deg,#64ABFF_0%,#7330FB_100%)]"></span>
+                    </div>
+                    <div class="w-full text-right text-nav-text-b grid grid-cols-1 md:grid-cols-4 gap-x-6 gap-y-2 justify-items-end">
+                        <a href="https://www.growthjockey.com/capabilities/marketplace-building" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Marketplace Building</a>
+                        <a href="https://www.growthjockey.com/capabilities/digital-marketing" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">360° digital marketing</a>
+                        <a href="https://www.growthjockey.com/capabilities/smo-and-orm" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">SMO and ORM</a>
+                        <a href="https://www.growthjockey.com/capabilities/ai-and-ml" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">AI/ML</a>
+                        <a href="https://www.growthjockey.com/capabilities/social-media-marketing" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Social media marketing</a>
+                        <a href="https://www.growthjockey.com/capabilities/revenue-growth" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Revenue growth</a>
+                        <a href="https://www.growthjockey.com/capabilities/operating-models" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Operating models</a>
+                        <a href="https://www.growthjockey.com/capabilities/digital-transformation" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Digital Transformation</a>
+                        <a href="https://www.growthjockey.com/capabilities/brand-growth" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Brand growth</a>
+                        <a href="https://www.growthjockey.com/capabilities/marketing-automation" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Marketing automation</a>
+                        <a href="https://www.growthjockey.com/capabilities/remote-business-operations" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Remote business operations</a>
+                        <a href="https://www.growthjockey.com/capabilities/metaverse" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Metaverse</a>
+                        <a href="https://www.growthjockey.com/capabilities/organic-growth" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Organic growth</a>
+                        <a href="https://www.growthjockey.com/capabilities/consumer-lifecycle" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Consumer lifecycle</a>
+                        <a href="https://www.growthjockey.com/capabilities/data-analytics" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Data analytics</a>
+                        <a href="https://www.growthjockey.com/capabilities/profit-and-loss-operations" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Profit and loss operations</a>
+                        <a href="https://www.growthjockey.com/capabilities/demand-generation" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Demand generation</a>
+                        <a href="https://www.growthjockey.com/capabilities/go-to-market" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Go to market</a>
+                        <a href="https://www.growthjockey.com/capabilities/ui-and-ux" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">UI/UX</a>
+                        <a href="https://www.growthjockey.com/capabilities/cloud-and-cyber-security" class="text-nav-text-b px-[1.125rem] py-[0.375rem] text-text-primary hover:text-primary-500 transition-colors duration-[250ms] ">Cloud and cyber security</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid gap-lg">
+            <div class="w-full grid place-items-center overflow-hidden">
+                <h3 class="text-big-text whitespace-nowrap bg-[linear-gradient(90deg,rgba(100,171,255,0.12)_0%,rgba(115,48,251,0.12)_100%)] bg-clip-text text-transparent">Build with us</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+                <div class="grid gap-2">
+                    <div class="grid grid-cols-[auto_1fr] gap-2 items-center">
+                        <img src="./Full Stack Venture Builder & Startup Accelerator in India_files/flagIndia.webp" alt="India Flag" class="w-8 h-8">
+                        <span class="text-nav-text-b">Gurugram, India</span>
+                    </div>
+                    <div class="text-nav-text font-light">10th Floor, Tower A, Signature Towers, Opposite Hotel Crowne Plaza, South City I, Sector 30, Gurugram, Haryana 122001</div>
+                </div>
+                <div class="grid gap-2">
+                    <div class="grid grid-cols-[auto_1fr] gap-2 items-center">
+                        <img src="./Full Stack Venture Builder & Startup Accelerator in India_files/flagUsa.webp" alt="USA Flag" class="w-8 h-8">
+                        <span class="text-nav-text-b">Irvine, United States of America</span>
+                    </div>
+                    <div class="text-nav-text font-light">19 Graham Street, Irvine, CA – 92617 , US</div>
+                </div>
+                <div class="grid gap-2">
+                    <div class="grid grid-cols-[auto_1fr] gap-2 items-center">
+                        <img src="./Full Stack Venture Builder & Startup Accelerator in India_files/flagIndia.webp" alt="India Flag" class="w-8 h-8">
+                        <span class="text-nav-text-b">Guwahati, India</span>
+                    </div>
+                    <div class="text-nav-text font-light">Shreeji Tower, 3rd Floor, Guwahati, Assam, 781005</div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full relative">
+            <div class="top-0 left-0 w-[50%] h-[1px] bg-gradient-to-r from-[#00A2ED] via-[#1F40CB] to-transparent"></div>
+            <div class="w-full px-4 md:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-[auto_1fr_auto] items-center gap-sm2 py-lg">
+                    <div class="text-nav-text-b grid grid-flow-col auto-cols-max justify-center gap-sm2">
+                        <a href="https://www.growthjockey.com/privacy-policy" class="block">Privacy Policy</a>
+                        <a href="https://www.growthjockey.com/terms-of-service" class="block">Terms of Service</a>
+                        <a href="https://www.growthjockey.com/cookies-policy" class="block">Cookie Policy</a>
+                    </div>
+                    <div class="grid grid-flow-col justify-center gap-x-6">
+                        <a href="https://www.youtube.com/@growth_jockey" target="_blank" rel="noopener"><img src="./Full Stack Venture Builder & Startup Accelerator in India_files/YT.svg" alt="YouTube-icon" class="h-[34px] w-[34px] p-1 transition-colors duration-[250ms] hover:[filter:brightness(0)_saturate(100%)_invert(34%)_sepia(97%)_saturate(2551%)_hue-rotate(223deg)_brightness(95%)_contrast(101%)] w-[34px] h-[34px]"></a>
+                        <a href="https://www.facebook.com/GrowthJockey" target="_blank" rel="noopener"><img src="./Full Stack Venture Builder & Startup Accelerator in India_files/Facebook.svg" alt="Facebook-icon" class="h-[34px] w-[34px] p-1 transition-colors duration-[250ms] hover:[filter:brightness(0)_saturate(100%)_invert(34%)_sepia(97%)_saturate(2551%)_hue-rotate(223deg)_brightness(95%)_contrast(101%)] w-[34px] h-[34px]"></a>
+                        <a href="https://www.instagram.com/growth_jockey" target="_blank" rel="noopener"><img src="./Full Stack Venture Builder & Startup Accelerator in India_files/Instagram.svg" alt="Instagram-icon" class="h-[34px] w-[34px] p-1 transition-colors duration-[250ms] hover:[filter:brightness(0)_saturate(100%)_invert(34%)_sepia(97%)_saturate(2551%)_hue-rotate(223deg)_brightness(95%)_contrast(101%)] w-[34px] h-[34px]"></a>
+                        <a href="https://www.linkedin.com/company/growthjockey/" target="_blank" rel="noopener"><img src="./Full Stack Venture Builder & Startup Accelerator in India_files/LinkedIn.svg" alt="LinkedIn-icon" class="h-[34px] w-[34px] p-1 transition-colors duration-[250ms] hover:[filter:brightness(0)_saturate(100%)_invert(34%)_sepia(97%)_saturate(2551%)_hue-rotate(223deg)_brightness(95%)_contrast(101%)] w-[34px] h-[34px]"></a>
+                        <a href="mailto:team@growthjockey.com" target="_blank" rel="noopener"><img src="./Full Stack Venture Builder & Startup Accelerator in India_files/mail.svg" alt="Email-icon" class="h-[34px] w-[34px] p-1 transition-colors duration-[250ms] hover:[filter:brightness(0)_saturate(100%)_invert(34%)_sepia(97%)_saturate(2551%)_hue-rotate(223deg)_brightness(95%)_contrast(101%)] w-[34px] h-[34px]"></a>
+                        <a href="https://twitter.com/GrowthJockey" target="_blank" rel="noopener"><img src="./Full Stack Venture Builder & Startup Accelerator in India_files/X.svg" alt="Twitter-icon" class="h-[34px] w-[34px] p-1 transition-colors duration-[250ms] hover:[filter:brightness(0)_saturate(100%)_invert(34%)_sepia(97%)_saturate(2551%)_hue-rotate(223deg)_brightness(95%)_contrast(101%)] w-[34px] h-[34px]"></a>
+                    </div>
+                    <div class="text-nav-text-b text-center md:text-right">© 2024 GrowthJockey. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Supabase CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <!-- JavaScript -->
+    <script src="script-supabase.js"></script>
+</body>
+</html>
